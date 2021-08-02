@@ -1,0 +1,48 @@
+.grid-dnd {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 30px 1fr;
+  grid-gap: $grid-gap-value;
+
+  header {
+    grid-column: 1 / -1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    .react-datepicker-wrapper {
+      margin: 0 16px;
+    }
+  }
+
+  .grid-dnd-task-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+  .grid-dnd-task-list, .grid-dnd-task-target {
+    display: grid;
+    grid-template-rows: 16px repeat(2, auto);
+    grid-gap: $grid-gap-value;
+    background: $background-color-grey;
+    padding: 16px;
+  }
+  .grid-dnd-task-list {
+    .box{
+      &:hover{
+          cursor: all-scroll;
+      }
+    }
+
+  }
+}
+
+.grid-dnd-task-target.target-active {
+  background-color: #959ca3;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-dnd {
+    grid-template-columns: 1fr;
+  }
+}
