@@ -5,15 +5,15 @@ In the project directory,
 
 1. please go to "client" folder: cd client
 
-run `npm install`
+    run `npm install`
 
 2. please back to project folder: cd ..
 
-run `npm install`
+    run `npm install`
 
 3. Runs the app in the development mode.
 
-run `npm run dev`
+    run `npm run dev` to start both server at port 5000 and web page at port 3000
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
